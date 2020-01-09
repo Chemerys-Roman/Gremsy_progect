@@ -1,0 +1,7 @@
+#!/bin/sh
+echo "Custom Post Deploy"
+
+echo "creating public symlink..."
+rm -rf public
+ln -fns ./dist public
+chown -R www-data:www-data public

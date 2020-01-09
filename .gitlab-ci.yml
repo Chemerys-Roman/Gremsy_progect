@@ -1,0 +1,17 @@
+deploy-production:
+  stage: deploy
+  when: manual
+  script:
+    - deploy --host host.example.com
+  only:
+    - master
+
+deploy-dev:
+  stage: deploy
+  when: manual
+  tags:
+    - project-stage
+  script:
+    - deploy --host stage.host.example.com
+  only:
+    - dev
