@@ -1,4 +1,4 @@
-# Morshynska New Form 2020
+# Frontend Template 2020
 
 ```npm run watch``` — для разработки
 ```npm run build``` — сборка для production
