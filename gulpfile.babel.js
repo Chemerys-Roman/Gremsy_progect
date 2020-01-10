@@ -48,6 +48,10 @@ gulp.task('watch', function(done) {
     gulp.watch('./src/styles/**/*.scss', gulp.series('styles'));
     gulp.watch('./src/html/**/*.html', gulp.series('html'));
     gulp.watch('./src/js/**/*.js', gulp.series('webpack'));
+    gulp.watch('./static/images/**/*.{jpg,png,jpeg,svg,gif}', gulp.series('copy'));
+    gulp.watch('./static/fonts/**/*.{ttf,eot,woff,woff2}', gulp.series('copy'));
+    gulp.watch('./static/lib/**/*', gulp.series('copy'));
+    
     done();
 });
 
@@ -112,11 +116,15 @@ gulp.task('copy:root', function(done) {
         .src('./static/*.*')
         .pipe(gulp.dest('./dist/'));
 
-//    gulp
-//        .src('./static/textures/**/*')
-//        .pipe(gulp.dest('./dist/textures'));
+    gulp
+        .src('./static/lib/**/*')
+        .pipe(gulp.dest('./dist/lib'));
 
     done();
+});
+
+gulp.task('copy:watch', function() {
+    gulp.watch('./static/images/**/*.{jpg,png,jpeg,svg,gif}', ['copy']);
 });
 
 gulp.task('clean', function(cb) {
