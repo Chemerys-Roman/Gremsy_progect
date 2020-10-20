@@ -16,10 +16,13 @@ import mozjpeg from 'imagemin-mozjpeg';
 import util from 'gulp-util';
 import webpack from 'webpack';
 import webpackStream from 'webpack-stream';
+import nunjucks from 'gulp-nunjucks';
+import inject from 'gulp-inject-string';
 
 const svgmin   = require('gulp-svgmin');
 const changed  = require('gulp-changed');
 const del      = require('del');
+const prettify = require('gulp-html-prettify');
 
 var production = process.env.NODE_ENV === 'production';
 
@@ -33,14 +36,23 @@ gulp.task('styles', () => {
         .pipe(connect.reload());
 });
 
+
 gulp.task('html', () => {
-    return gulp
-        .src('./src/html/*.html')
-        .pipe(fileinclude({
-            prefix: '@@',
-            basepath: '@file'
+    var datum = new Date();
+    var timestamp = datum.getTime()/1000;
+
+    // console.log(getData());
+
+    return gulp.src('./src/html/**/[^_]*.html')
+        // .pipe(data(() => ({data: getData()})))
+        .pipe(nunjucks.compile({}, { trimBlocks: true, lstripBlocks: true }))
+        .pipe(prettify({
+          indent_size: 4,
+          indent_char: ' '
         }))
-        .pipe(gulp.dest('./dist'))
+        .pipe(inject.after('src="/js/main.js', '?' + timestamp))
+        .pipe(inject.after('href="/styles/main.css', '?' + timestamp))
+        .pipe(gulp.dest('dist'))
         .pipe(connect.reload());
 });
 
@@ -58,7 +70,8 @@ gulp.task('watch', function(done) {
 gulp.task('serve', function(done) {
     connect.server({
         root: './dist',
-        livereload: true
+        livereload: true,
+        host: "0.0.0.0"
     });
 
     done();
@@ -118,7 +131,7 @@ gulp.task('copy:root', function(done) {
 
     gulp
         .src('./static/lib/**/*')
-        .pipe(gulp.dest('./dist/lib'));
+        .pipe(gulp.dest('./dist/jslib'));
 
     done();
 });

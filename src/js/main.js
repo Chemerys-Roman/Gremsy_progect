@@ -1,4 +1,3 @@
-import o from './lib/lib.js';
+$(document).ready(function () {
 
-console.log('hello');
-o.world()
+});
