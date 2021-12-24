@@ -1,6 +1,7 @@
 import util from 'gulp-util';
 import webpack from 'webpack';
 import path from 'path';
+import ESLintPlugin from 'eslint-webpack-plugin';
 
 const buildPath = path.resolve(__dirname, 'dist/js');
 const production = process.env.NODE_ENV === 'production' || util.env.production || util.env.prod || util.env._.indexOf('build') !== -1 || false;
@@ -30,7 +31,7 @@ module.exports = {
         options: {
           presets: ['@babel/preset-env']
         }
-      }
+      },
     ],
   },
   plugins: [
@@ -38,6 +39,9 @@ module.exports = {
       $: 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery'
+    }),
+    new ESLintPlugin({
+      extensions: ['js'],
     }),
   ]
 };
