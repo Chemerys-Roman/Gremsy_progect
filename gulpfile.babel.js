@@ -11,7 +11,6 @@ import connect from 'gulp-connect';
 import nunjucks from 'gulp-nunjucks';
 import inject from 'gulp-inject-string';
 import log from 'fancy-log';
-import favicons from 'gulp-favicons';
 import svgmin from 'gulp-svgmin';
 import del from 'del';
 
@@ -45,29 +44,10 @@ gulp.task('html', () => {
   .pipe(connect.reload());
 });
 
-gulp.task('favicons', () => {
-  return gulp
-  .src('./src/img/favicon/*.{jpg,jpeg,png,gif}')
-  .pipe(favicons({
-    icons: {
-      appleIcon: true,
-      favicons: true,
-      online: false,
-      appleStartup: false,
-      android: false,
-      firefox: false,
-      yandex: false,
-      windows: false,
-      coast: false
-    }
-  }))
-  .pipe(gulp.dest('./dist/images/favicons/'));
-});
 
 gulp.task('watch', function (done) {
   gulp.watch('./src/styles/**/*.scss', gulp.series('styles'));
   gulp.watch('./src/html/**/*.html', gulp.series('html'));
-  gulp.watch('./src/img/favicon/**/*', gulp.series('favicons'));
   gulp.watch('./src/js/**/*.js', gulp.series('js'));
   gulp.watch('./static/images/**/*.{jpg,png,jpeg,svg,gif}', gulp.series('copy'));
   gulp.watch('./static/fonts/**/*.{ttf,eot,woff,woff2}', gulp.series('copy'));
@@ -153,7 +133,7 @@ gulp.task('clean', function (cb) {
 });
 
 gulp.task('copy', gulp.series('copy:img', 'copy:fonts', 'copy:root'));
-gulp.task('build', gulp.series('clean', 'copy', 'favicons', 'html', 'styles', 'js'));
+gulp.task('build', gulp.series('clean', 'copy', 'html', 'styles', 'js'));
 
 const defaultTasks = gulp.parallel('html', 'styles', 'serve', 'js', 'watch')
 
