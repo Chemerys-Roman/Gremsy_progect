@@ -57,19 +57,24 @@
     display: flex;
     justify-content: space-between;
   }
-  &__logo{
+  &__logo-container{
+    flex: 1 1 auto;
     padding: 30px 20px;
+  }
+  &__logo{
+
     width: 127px;
   }
   &__nav{
+    width: 50%;
     padding: 0 20px 30px 3px;
   }
-  &__link{
+  &__link{display: block;
     text-transform: uppercase;
     font-weight: 400;
     text-decoration: none;
     &_block{
-      padding: 30px;
+      padding: 30px 0;
       font-size: 14px;
       line-height: 17px;
       letter-spacing: 0.05em;
@@ -87,6 +92,7 @@
 
   }
   &__media-links{
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -104,5 +110,20 @@
       width: auto;
       height: auto;
     }
+  }
+}
+.copywrite{
+  height: 55px;
+  padding-top: 9px;
+  div {
+    padding-bottom: 10px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

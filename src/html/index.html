@@ -6,6 +6,20 @@
     <img src="../../static/images/header/main_logo.png" alt="">
   </div>
   <div class="header__burger"></div>
+  <div class="header__menu">
+    <div class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-list-item"><a href="#" class="header__nav-link">хто ми</a></li>
+        <li class="header__nav-list-item"><a href="#" class="header__nav-link"></a>що робимо</li>
+        <li class="header__nav-list-item"><a href="#" class="header__nav-link"></a>медіа</li>
+        <li class="header__nav-list-item"><a href="#" class="header__nav-link"></a>база знань</li>
+      </ul>
+      <a href="#" class="header__nav-button">допомогти
+      </a>
+    </div>
+    <div class="header__lenguage"></div>
+    <div class="header__social"></div>
+  </div>
 </header>
 <main>
 <section id="we_are" class="block-title">
@@ -52,7 +66,7 @@
     <div class="whatwedo__number">01</div>
     <div class="whatwedo__content">
       <div class="whatwedo__title">
-        <div class="whatwedo__title-text">Рівні Права та Свободи</div>
+        <div id='eqalrights' class="whatwedo__title-text">Рівні Права та Свободи</div>
         <a href="#" class="whatwedo__title-link"><img src="../../static/images/whatwedo/link-pointer.png" alt=""></a>
       </div>
       <div class="whatwedo__item-description">Впровадження інституту цивільного партнерства #РЦП, врегулювання відповідальності за злочини, мотивовані ненавистю #ЗМН, подолання інших дискримінаційних бар'єрів у національному законодавстві</div>
@@ -62,7 +76,7 @@
     <div class="whatwedo__number">02</div>
     <div class="whatwedo__content">
       <div class="whatwedo__title">
-        <div class="whatwedo__title-text">Експертиза та Лідерство</div>
+        <div id="expert" class="whatwedo__title-text">Експертиза та Лідерство</div>
         <a href="#" class="whatwedo__title-link"><img src="../../static/images/whatwedo/link-pointer.png" alt=""></a>
       </div>
       <div class="whatwedo__item-description">Впровадження інституту цивільного партнерства #РЦП, врегулювання відповідальності за злочини, мотивовані ненавистю #ЗМН, подолання інших дискримінаційних бар'єрів у національному законодавстві</div>
@@ -72,7 +86,7 @@
     <div class="whatwedo__number">03</div>
     <div class="whatwedo__content">
       <div class="whatwedo__title">
-        <div class="whatwedo__title-text">Громадське Здоров’я</div>
+        <div id="helth" class="whatwedo__title-text">Громадське Здоров’я</div>
         <a href="#" class="whatwedo__title-link"><img src="../../static/images/whatwedo/link-pointer.png" alt=""></a>
       </div>
       <div class="whatwedo__item-description">Бюджетна адвокація і моніторинг законодавства у сфері ВІЛ
@@ -81,7 +95,7 @@
   </div>
 </section>
 <section class="projects">
-  <div class="projects__blocktitle">спецпроєкти</div>
+  <div id="knowlages" class="projects__blocktitle">спецпроєкти</div>
   <div class="projects__project projects__project_patriot">
     <a href="#" class="projects__title">Гей може бути патріотом</a>
     <div class="projects__describtion ">відповідь рядового ЗСУ Олександра Горбаченка меру Івано-Франківська Руслану Марцинківу</div>
@@ -108,7 +122,7 @@
     </div>
   </div>
 </section>
-<section class="news">
+<section id="media" class="news">
   <div class="news__title">останні новини</div>
 
   <div class="news__block">
@@ -157,16 +171,18 @@
     </form>
   </div>
   <div class="footer__info">
-    <div class="footer__logo"><img src="../../static/images/footer/footer_logo.png" alt=""></div>
+    <div class="footer__logo-container">
+      <div class="footer__logo"><img src="../../static/images/footer/footer_logo.png" alt=""></div>
+    </div>
     <nav class="footer__nav">
       <a href="#we_are" class="footer__link footer__link_block">хто ми</a>
       <a href="#mission" class="footer__link footer__link_block">що робимо</a>
-      <a href="#we_are" class="footer__link footer__link_article">рівні права та свободи</a>
-      <a href="#we_are" class="footer__link footer__link_article">укспертиза та лідерство</a>
-      <a href="#we_are" class="footer__link footer__link_article">громадське здоровʼя</a>
-      <a href="#we_are" class="footer__link footer__link_block">база знань</a>
-      <a href="#we_are" class="footer__link footer__link_block">медіа</a>
-      <a href="#we_are" class="footer__link footer__link_article">новини змі про нас</a>
+      <a href="#eqalrights" class="footer__link footer__link_article">рівні права та свободи</a>
+      <a href="#expert" class="footer__link footer__link_article">експертиза та лідерство</a>
+      <a href="#helth" class="footer__link footer__link_article">громадське здоровʼя</a>
+      <a href="#knowlages" class="footer__link footer__link_block">база знань</a>
+      <a href="#media" class="footer__link footer__link_block">медіа</a>
+      <a href="#media" class="footer__link footer__link_article">новини змі про нас</a>
       <div class="footer__media-links">
         <a href="" class="footer__media-link"><img src="../../static/images/footer/fb.png" alt=""></a>
         <a href="" class="footer__media-link"><img src="../../static/images/footer/inst.png" alt=""></a>
