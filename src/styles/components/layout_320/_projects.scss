@@ -1,0 +1,65 @@
+.projects{
+  font-family: 'e-Ukraine';
+  padding: 55px 20px 69px;
+  &__blocktitle{
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 31px;
+    text-transform: uppercase;
+  }
+  &__project{
+    margin-bottom: 20px;
+    height: 351px;
+    border-radius: 15px;
+    padding: 20px 14px;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    &_patriot{
+
+      background-image: url("../../../../static/images/projects/patriot.png");
+    }
+    &_reg{
+      background-image: url("../../../../static/images/projects/registred.png");
+    }
+  }
+  &__link{
+    display: none;
+  }
+  &__title{
+    flex: 1 1 auto;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: flex-end;
+  }
+  &__describtion{
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+  }
+  &__button{
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 30px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+  }
+}

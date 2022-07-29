@@ -1,0 +1,84 @@
+.whatwedo{
+  padding: 55px 20px;
+  background-color: #5383EC;
+  font-family: 'e-Ukraine';
+  &__blocktitle{
+  padding-bottom:  50px;
+    border-bottom: 2px solid black;
+  }
+  &__item{
+    border-bottom: 2px solid black;
+  }
+  &__name{
+    text-transform: uppercase;
+    color: black;
+    opacity: 0.4;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    font-family: 'e-Ukraine';
+    line-height: 13px;
+  }
+  &__title{
+    margin-top: 7px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 31px;
+    text-transform: uppercase;
+  }
+  &__description{
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px ;
+    text-transform: uppercase;
+  }
+  &__button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+  }
+  &__item{
+    padding: 15px 0 20px;
+  }
+  &__number{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 53px;
+    text-transform: uppercase;
+  }
+  &__title{
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    &-text{
+      flex: 1 1 auto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
+    &-link{
+      flex: 0 0 24px;
+    }
+  }
+  &__item-description{
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+
+  }
+}
