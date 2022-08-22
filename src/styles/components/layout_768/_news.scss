@@ -1,0 +1,58 @@
+.news{
+  padding: 80px 20px;
+
+  position: relative;
+  &__title{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 31px ;
+    padding-bottom: 30px;
+
+    text-transform: uppercase;
+  }
+  &__block{
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+  }
+  &__content{
+    padding-left: 20px;
+    flex: 1 1 auto;
+    height: 100%;
+
+  }
+  &__image{
+    width: 280px;
+    height: 170px;
+    flex: 0 0 30%;
+    margin: auto;
+    border-radius: 10px;
+  }
+  &__description{
+    flex: 1 1 auto;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  &__footer{
+
+  }
+  &__date{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    opacity: 0.55;
+  }
+  &__link{
+    width: 30px;
+    height: 21px;
+  }
+  &__button{
+    position: absolute;
+    right: 30px;
+    top: 80px;
+    padding: 10px 20px;
+    width: auto;
+    margin: 0;
+  }
+}

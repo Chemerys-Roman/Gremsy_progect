@@ -1,0 +1,92 @@
+.managers{
+  padding: 55px;
+
+  &__name{
+    font-family: 'e-Ukraine-Medium';
+    padding-bottom: 7px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    opacity: 0.4;
+  }
+  &__title{
+    font-family: 'e-Ukraine-Medium';
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 31px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__list{
+    //width: 120%;
+    //
+    //
+    //list-style: none;
+    //margin: 0;
+    //padding: 0;
+    //display: flex;
+    //justify-content: space-around;
+  }
+  &__card{
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px;
+    width: 250px;
+    &-image{
+      width: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    &-info{
+      padding: 20px 0;
+      &-name{
+        font-family: 'e-Ukraine-Medium';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+      }
+      &-position{
+        font-family: 'e-Ukraine-Regular';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}
+.managers__title-text{
+  flex: 1 1 auto;
+}
+.managers__pointer{
+  width: 50px;
+  height: 35px;
+}
+
+.managers-swiper:hover {
+  .managers__pointer {
+    use {
+      fill: #F29100;
+    }
+  }
+}
+.managers-swiper{
+  margin: 0 5px;
+}
+
+.managers-swiper-prev{
+  transform: rotateY(180deg);
+}
+.managers-swiper-next{
+
+}
+.slider-container{
+  width: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}

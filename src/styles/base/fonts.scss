@@ -1,0 +1,24 @@
+@include font("e-Ukraine-Light", "e-Ukraine-Light");
+@include font("e-Ukraine-Regular", "e-Ukraine-Regular");
+@include font("e-Ukraine-Medium", "e-Ukraine-Medium");
+@include font("e-Ukraine-Bold", "e-Ukraine-Bold");
+@include font("e-Ukraine-ExtraBold", "e-Ukraine-ExtraBold");
+
+@mixin ff-light {
+  font-family: "e-Ukraine-Light", Arial, Helvetica, sans-serif;
+}
+
+@mixin ff-default {
+  font-family: "e-Ukraine-Regular", Arial, Helvetica, sans-serif;
+}
+
+@mixin ff-medium {
+  font-family: "e-Ukraine-Medium", Arial, Helvetica, sans-serif;
+}
+
+@mixin ff-bold {
+  font-family: "e-Ukraine-Bold", Arial, Helvetica, sans-serif;
+}
+@mixin ff-extra-bold {
+  font-family: "e-Ukraine-ExtraBold", Arial, Helvetica, sans-serif;
+}

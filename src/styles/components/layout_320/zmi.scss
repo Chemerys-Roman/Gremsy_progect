@@ -1,0 +1,49 @@
+.global-news-container {
+  background-color: #CFDDF5;
+  .container {
+    padding: 55px 20px;
+  }
+  .zmi{
+    position: relative;
+    &__title{
+      font-family: 'e-Ukraine-Medium';
+      font-size: 28px;
+      line-height: 31px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    &__button{
+      border-radius: 30px;
+      padding: 3px 12px;
+      position: absolute;
+      left: 15px;
+      bottom: 125px;
+      font-family: 'e-Ukraine-Regular';
+      font-size: 12px;
+      line-height: 14px;
+      text-transform: uppercase;
+
+    }
+    &__item{
+      border-bottom: 2px solid black;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      width: 280px;
+      margin: auto;
+
+      &-image{
+        width: 280px;
+        height: 145px;
+        margin: auto;
+        margin-bottom: 15px;
+      }
+      &-text{
+        font-family: 'e-Ukraine-Regular';
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+}

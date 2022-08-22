@@ -1,0 +1,27 @@
+.news{
+
+  &__title{
+    font-size: 55px;
+    line-height: 66px ;
+    padding-bottom: 30px;
+
+  }
+  &__block{
+    display: flex;
+    align-items: center;
+
+  }
+  &__image{
+  flex: 0 0 30%;
+  }
+  &__content{
+    padding-left: 20px;
+    flex: 1 1 auto;
+
+  }
+  &__description{
+    font-size: 27px;
+    line-height: 32px ;
+  }
+
+}

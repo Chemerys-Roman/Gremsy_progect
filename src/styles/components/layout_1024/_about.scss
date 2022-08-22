@@ -1,0 +1,18 @@
+
+.aboutus{
+  &__hash{
+    width: 150px;
+  }
+  &__border-text{
+    &.display-none-768{
+      display: block;
+    }
+  }
+  &__border-hash{
+    &.display-none-768{
+      display: block;
+    }
+  }
+
+
+}

@@ -1,0 +1,20 @@
+.managers{
+  .managers{
+    padding: 80px 0;
+    &__title{
+      font-size: 28px;
+      line-height: 34px;
+    }
+    &__card{
+      width: 300px;
+    }
+    &__card-info-name{
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &_card-info-position{
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.popup-donate{
+  width: 710px;
+  height: auto;
+  display: flex;
+  //align-items: center;
+  border-radius: 20px;
+
+  &__image-container{
+    position: relative;
+    min-height: 100%;
+    display: block;
+    min-width: 260px;
+    margin-right: 20px;
+  }
+  &__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__stick{
+      background-color: #5383EC;
+      font-family: 'Inter';
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 13px;
+      font-style: italic;
+      width: 80px;
+      height: 29px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100px;
+      transform: rotate(-12.43deg);;
+      position: absolute;
+      top: -15px;
+      left: -5px;
+  }
+  &__smile{
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    bottom: -25px;
+    right: -15px;
+  }
+  &__content{
+    flex: 1 1 70%;
+  }
+  &__close{
+    top: 9px;
+    right: 9px;
+  }
+}

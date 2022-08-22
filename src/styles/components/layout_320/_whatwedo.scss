@@ -1,7 +1,11 @@
+
+.whatwedo-container{
+  background-color: #5383EC;
+}
 .whatwedo{
   padding: 55px 20px;
-  background-color: #5383EC;
-  font-family: 'e-Ukraine';
+
+
   &__blocktitle{
   padding-bottom:  50px;
     border-bottom: 2px solid black;
@@ -16,10 +20,11 @@
     font-weight: 500;
     font-size: 12px;
     letter-spacing: 0.05em;
-    font-family: 'e-Ukraine';
+    font-family: 'e-Ukraine-Medium';
     line-height: 13px;
   }
   &__title{
+    font-family: 'e-Ukraine-Medium';
     margin-top: 7px;
     font-style: normal;
     font-weight: 500;
@@ -28,6 +33,7 @@
     text-transform: uppercase;
   }
   &__description{
+    font-family: 'e-Ukraine-Medium';
     margin-top: 15px;
     font-style: normal;
     font-weight: 500;
@@ -36,21 +42,24 @@
     text-transform: uppercase;
   }
   &__button{
+    font-family: 'e-Ukraine-Medium';
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 30px;
+    display: inline-flex;
   }
   &__item{
     padding: 15px 0 20px;
+    &:hover{
+      .whatwedo-pointer{
+        use{
+          fill: #F29100;
+        }
+      }
+    }
   }
   &__number{
+    font-family: 'e-Ukraine-Regular';
     font-style: normal;
     font-weight: 400;
     font-size: 44px;
@@ -62,6 +71,7 @@
     display: flex;
     align-items: center;
     &-text{
+      font-family: 'e-Ukraine-Medium';
       flex: 1 1 auto;
       font-style: normal;
       font-weight: 500;
@@ -71,9 +81,15 @@
     }
     &-link{
       flex: 0 0 24px;
+
     }
   }
+  &-pointer{
+    height: 24px;
+    width: 35px;
+  }
   &__item-description{
+    font-family: 'e-Ukraine-Regular';
     margin-top: 10px;
     font-style: normal;
     font-weight: 300;
@@ -82,3 +98,4 @@
 
   }
 }
+

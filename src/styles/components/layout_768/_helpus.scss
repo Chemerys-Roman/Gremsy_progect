@@ -1,0 +1,42 @@
+.helpus-container{
+  max-height: 650px;
+}
+.helpus{
+  display: flex;
+
+  &__title{
+    font-size: 28px;
+    line-height: 34px;
+  }
+  &__describtion{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  &__image{
+  flex: 1 1 40%;
+    order: 2;
+  }
+  &__content{
+    flex: 1 1 60%;
+    order: 1;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  &__button{
+
+
+  }
+
+  &__hash{
+    position: absolute;
+    top: 100%;
+    transform: translate(50%,-50%);
+    right: 0;
+    height: 79px;
+    width: 79px;
+  }
+
+
+}

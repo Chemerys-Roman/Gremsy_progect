@@ -1,0 +1,13 @@
+.memorandum{
+  &__content{
+    padding: 155px 105px;
+    &-text{
+      font-size: 27px;
+      line-height: 32px;
+    }
+  }
+  &__hash{
+    width: 155px;
+  }
+
+}

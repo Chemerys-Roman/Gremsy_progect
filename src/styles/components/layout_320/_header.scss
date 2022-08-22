@@ -1,36 +1,40 @@
-*{
-  box-sizing: border-box;
-}
-body{
-  background-color: #F5EDE3;
-}
-img{
+.header-container{
   width: 100%;
-  height: 100%;
-}
-.wrapper{
-  padding: 14px 13px;
-}
-.header{
   position: fixed;
-  z-index: 3;
   top:0;
   left:0;
-  width: 100%;
-  height: 50px;
+
+  z-index: 10;
+
   background-color: #F5EDE3;
   border-bottom: 1px solid black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-        .header__logo{
+}
+.wrapper{
+    padding: 14px 13px;
+}
+.header{
+width: 100%;
+  box-sizing: border-box;
+        &__body{
+          position: relative;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+        }
+        &__logo{
+          flex: 0 0 auto;
+          position: relative;
           width: 127px;
           height: 23px;
         }
-        .header__burger{
+        &__burger{
           width: 30px;
           height: 13px;
           position: relative;
+          z-index: 51;
           overflow: hidden;
           &::before, &::after{
             content: '';
@@ -39,8 +43,6 @@ img{
             background-color: black;
             position: absolute;
             left: 0;
-
-            //z-index: 1;
           }
           &::before{
             top: 0;
@@ -49,7 +51,7 @@ img{
             bottom: 0;
           }
         }
-        .header__burger_active{
+        &__burger_active{
           &::before{
             top: 50%;
             transform: translate(0,-50%);
@@ -58,12 +60,121 @@ img{
             display: none;
           }
         }
+        &:before{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #F5EDE3;
+        }
+  &__menu{
+    overflow: scroll;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ED764A;
+    padding-top: 50px;
+    z-index:1;
+    font-family: 'e-Ukraine-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 110%;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    display: flex;
+    flex-direction: column;
+    a{
+      text-decoration: none;
+    }
+    &_active{
+      top: 0;
+      transition:all 0.3s ease 0s;
+    }
+  }
+  &__nav{
+    flex: 1 1 auto;
+    padding: 30px 20px;
+    border-bottom: 1px  solid black;
+  }
+  &__button{
+    width: 100%;
+    padding: 15px 0;
+    margin: 30px 0 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 30px;
+    border-bottom: 1px solid black;
+    a {
+        color: #F5EDE3;
+    }
+  }
+  &__nav-list-item{
+    margin-bottom: 14px;
+
+
+  }
+  &__nav-link{
+    color: black;
+    padding-bottom: 1px;
+    &:hover{
+      border-bottom: 2px solid black;
+    }
+  }
+  &__language{
+    padding: 30px 22px 32px;
+    border-bottom: 1px solid black;
+  }
+  &__language-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    text-transform: uppercase;
+  }
+  &__language-list{
+    margin: 15px 0 0;
+    a {
+      text-transform: uppercase;
+      color: black;
+      font-family: 'e-Ukraine-Medium';
+      font-weight: 300;
+      font-size: 28px;
+      line-height: 110%;
+      margin-right: 30px;
+    }
+    a.active-lang{
+      font-weight: 500;
+    }
+  }
+  &__social{
+  padding: 24px 21px 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: black;
+      position: relative;
+      img{
+        position: absolute;
+        width: auto;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
 
 }
-.header__menu{
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  background-color: #ED764A;
-}
+
+

@@ -1,0 +1,16 @@
+.values {
+  &__title{
+    border-bottom: none;
+  }
+  &__item{
+    border-bottom: none;
+    border-top: 2px solid black;
+    display: flex;
+    &-title{
+      flex: 0 0 35%;
+    }
+    &__description{
+      flex: 0 0 65%;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.projects{
+  padding: 80px 20px 69px;
+  position: relative;
+  &__blocktitle{
+    font-size: 28px;
+    line-height: 34px;
+  }
+  &__project{
+    height: 320px;
+    position: relative;
+    padding-right: 100px;
+  }
+  &__link{
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    right: 30px;
+    bottom: 30px;
+  }
+  &__title{
+    font-size: 22px;
+    line-height: 26px;
+  }
+  &__describtion{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  &__button{
+    position: absolute;
+    right: 30px;
+    top: 80px;
+    padding: 10px 20px;
+    width: auto;
+    margin: 0;
+
+  }
+}

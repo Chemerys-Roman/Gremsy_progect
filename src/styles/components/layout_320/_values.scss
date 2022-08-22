@@ -1,0 +1,47 @@
+.values-container{
+  background-color: #5383EC;
+}
+.values{
+  padding: 55px 20px;
+
+
+  &__title{
+    font-family: 'e-Ukraine-Medium';
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 31px;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    border-bottom: 2px solid black;
+  }
+  &__name{
+    font-family: 'e-Ukraine-Medium';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #202124;
+    opacity: 0.4;
+    padding-bottom: 10px;
+  }
+  &__item{
+    padding: 20px 0;
+    border-bottom: 2px solid black;
+    &-title{
+      font-family: 'e-Ukraine-Medium';
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 26px;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+    }
+    &-description{
+      font-family: 'e-Ukraine-Regular';
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+
+    }
+  }
+}

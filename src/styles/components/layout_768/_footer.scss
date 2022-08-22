@@ -1,0 +1,116 @@
+.footer{
+  background-color: #202124;
+  color: white;
+  font-family: 'e-Ukraine';
+
+
+  &__mailing{
+    padding: 55px 20px;
+    border-bottom: 2px solid #F5EDE3;
+
+  }
+  &__form-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title{
+    font-weight: 500;
+    font-size: 65px;
+    line-height: 78px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-right: 0;
+    span{
+      width: 170px;
+      height: 68px;
+    }
+  }
+  &__text{
+    flex: 0 0 30%;
+    margin: 40px 0 0 0;
+    font-size: 16px;
+    line-height: 19px;
+    padding-right: 0;
+  }
+  &__form{
+    flex: 1 1 auto;
+    padding-left: 19px;
+  }
+  &__input-container{
+    display: flex;
+    justify-content: space-between;
+    div{
+      flex: 0 0 48%;
+    }
+  }
+  &__info{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo-container{
+    flex: 0 0 30%;
+  }
+  &__logo{
+
+  }
+  &__nav{
+    padding-left: 19px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    width: auto;
+  }
+  &__knowledge-container{
+    order: 1;
+    flex: 0 0 20%;
+    margin-right: 40px;
+  }
+  &__about-container{
+    flex: 1 1 20%;
+    order: 2;
+    margin-right: 20px;
+  }
+  &__link{
+
+    &_block{
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &_article{
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+  }
+  &__media-links{
+    order: 3;
+    flex: 0 0 20%;
+
+    align-items: start;
+
+  }
+  &__media-link{
+    background-color: #F5EDE3;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: auto;
+      height: auto;
+    }
+  }
+}
+.copywrite{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  padding: 0 20px;
+  div {
+    padding: 0;
+
+  }
+}

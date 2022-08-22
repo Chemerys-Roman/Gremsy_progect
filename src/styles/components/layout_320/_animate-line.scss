@@ -1,0 +1,81 @@
+.animate-line{
+  margin-top: 50px;
+  height: 120px;
+  background-color: #202124;
+  position: relative;
+  overflow: hidden;
+  &__part{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    width: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &_1{
+      left: -120%;
+      animation-name: news-line-1;
+      animation-direction: normal;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-duration: 4s;
+    }
+    &_2{
+      left: 0;
+      animation-name: news-line-2;
+      animation-direction: normal;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-duration: 4s;
+    }
+    &__hash{
+      background-color: white;
+      //background-image: url("../static/images/news_page/hash-bg.png");
+      background-position: center;
+      background-size: cover;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 36px;
+        height: 31px;
+      }
+      &.animate-line__768{
+        display: none;
+      }
+    }
+    &__text{
+      font-family: 'e-Ukraine-Medium';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 55px;
+      line-height: 66px;
+      text-transform: uppercase;
+      color: #F5EDE3;
+      &.animate-line__768{
+        display: none;
+      }
+    }
+  }
+}
+@keyframes news-line-1 {
+  from{
+    left: -120%
+  }
+  to{
+    left: 0;
+  }
+}
+
+@keyframes news-line-2 {
+  from{
+    left: 0;
+  }
+  to{
+    left: 120%;
+  }
+}
+

@@ -1,0 +1,94 @@
+.global-news-container{
+  .container{
+    padding: 30px 20px 55px;
+  }
+  .global-news{
+    .global-news__button{
+      display: block;
+      margin-top: 30px;
+      padding: 10px 0;
+      width: 100%;
+    }
+    &__button{
+      border-radius: 30px;
+      font-family: 'e-Ukraine-Medium';
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .buttons-container{
+      width: 100%;
+      overflow: scroll;
+      scroll-behavior: smooth;
+      border-bottom: 2px solid black;
+    }
+    &__filter-buttons-block{
+      width: auto;
+      padding-bottom:  30px;
+      display: inline-flex;
+    }
+    &__filter-button{
+
+      margin-right: 20px;
+      white-space: nowrap;
+      border-radius: 30px;
+      padding: 8px 21px;
+      font-family: 'e-Ukraine-Regular';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      &.animate-button-white{
+        border: 1px solid black;
+        &:hover{
+          border: none;
+        }
+      }
+    }
+    &__item{
+
+      padding: 15px 0;
+      border-bottom: 2px solid black;
+      &:hover{
+        .global-news__item-text{
+          text-decoration: underline;
+        }
+        .global-news__item-pointer{
+          use{
+            fill: #F29100;
+          }
+        }
+      }
+      &-image{
+        width: 280px;
+        height: 170px;
+        margin: auto;
+      }
+      &-text{
+        font-family: 'e-Ukraine-Medium';
+        font-style: normal;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 15px 0 30px;
+      }
+      &-footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &-date{
+        flex: 1 1 auto;
+        font-family: 'e-Ukraine-Regular';
+        font-style: normal;
+        font-size: 14px;
+        line-height: 17px;
+        opacity: 0.55;
+        text-transform: uppercase;
+      }
+    }
+    &__pointer{
+      width: 30px;
+      height: 21px;
+    }
+  }
+}

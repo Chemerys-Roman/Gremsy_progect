@@ -1,5 +1,21 @@
-@import 'components/_reset';
-@import 'components/_fonts';
+@import "components/_reset";
+@import "helpers/_index";
+@import "variables/_index";
+@import "base/_index";
+@import "components/_fonts";
+@import "components/global";
+@import "pages/_index";
+@import "components/libs/swiper";
+
 @media only screen and (min-width: 320px) {
   @import "components/layout_320/index";
+}
+@media only screen and (min-width: 768px) {
+  @import "components/layout_768/index";
+}
+@media only screen and (min-width: 1024px) {
+  @import "components/layout_1024/index";
+}
+@media only screen and (min-width: 1440px) {
+  @import "components/layout_1440/index";
 }

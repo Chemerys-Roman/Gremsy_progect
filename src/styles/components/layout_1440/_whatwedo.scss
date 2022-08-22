@@ -1,0 +1,31 @@
+.whatwedo{
+padding-left: 100px;
+padding-right: 100px;
+  &__item{
+    display: flex;
+  }
+  &__content{
+    flex: 1 1 65%;
+  }
+  &__number{
+    flex-basis: 35%;
+
+  }
+  &__title{
+    font-size: 55px;
+    line-height: 66px;
+  }
+  &__description{
+    font-size: 27px;
+    line-height: 32px;
+  }
+  &__title-text{
+    font-size: 38px;
+    line-height: 46px;
+  }
+  &__item-description{
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+}

@@ -1,0 +1,16 @@
+.memorandum{
+  display: flex;
+  &__image{
+    flex-basis: 40%;
+  }
+  &__content{
+    flex-basis: 60%
+  }
+  &__hash{
+    right: 0;
+    width: 97px;
+    top: auto;
+    bottom: 40px;
+    transform: translate(50px,0);
+  }
+}

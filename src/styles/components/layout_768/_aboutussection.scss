@@ -1,0 +1,65 @@
+.block-about{
+  padding: 80px 0;
+  position: relative;
+  display: flex;
+  &__item{
+    &_image{
+      width: auto;
+      flex-basis: 50%;
+      padding: 0 30px;
+    }
+    &_content{
+      flex-basis: 50%;
+      padding: 0 30px 0 5px;
+    }
+    &_title{
+      font-size: 20px;
+      line-height: 22px;
+    }
+    &_text{
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  &__button{
+    display: inline-flex;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    font-family: 'e-Ukraine-Medium';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    border-radius: 30px;
+  }
+  &__hash{
+    width: 105px;
+    height: 105px;
+    position: absolute;
+    bottom: 58px;
+    right: 45px;
+    &-icon{
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+    }
+    &-stick{
+      background-color: #EBC168;
+      font-family: 'Inter-ExtraBold';
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 14px;
+      font-style: italic;
+      width: 106.02px;
+      height: 40.01px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100px;
+      transform: rotate(-17.81deg);
+      position: absolute;
+      bottom: 0;
+      left: 38px;
+    }
+  }
+}

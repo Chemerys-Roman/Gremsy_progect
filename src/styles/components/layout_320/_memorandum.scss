@@ -1,0 +1,64 @@
+.memorandum-container{
+  background-color: #ED764A;
+}
+.memorandum{
+  &__image{
+    //min-height: 340px;
+  img{
+    object-position: center;
+    object-fit: cover;
+  }
+  }
+  &__content{
+    padding: 55px 20px 0;
+
+    min-height: 450px;
+    position: relative;
+    &-text{
+      font-family: 'e-Ukraine-Medium';
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &-button{
+      display: inline-block;
+      margin: 20px 0;
+      padding: 10px 20px;
+      border-radius: 30px;
+      ;
+    }
+  }
+  &__hash{
+    position: absolute;
+    width: 95px;
+    top:100%;
+    transform: translate(0, -50%);
+    right: 45px;
+    &-bg{
+      width: 100%;
+    }
+    &-body{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &-stick{
+      display: inline-block;
+      padding: 10px 15px;
+      background: #EBC168;
+      border-radius: 100px;
+      transform: rotate(-7.81deg);
+      font-family: 'Inter';
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 13px;
+      font-style: italic;
+      color: #202124;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

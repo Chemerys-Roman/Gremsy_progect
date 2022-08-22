@@ -1,199 +1,357 @@
 {% set body_class = "home-page" %}
 {% extends "./_layout.html" %}
 {% block content %}
-<header class="header wrapper">
-  <div class="header__logo">
-    <img src="/images/header/main_logo.png" alt="">
-  </div>
-  <div class="header__burger"></div>
-  <div class="header__menu">
-    <div class="header__nav">
-      <ul class="header__nav-list">
-        <li class="header__nav-list-item"><a href="#" class="header__nav-link">хто ми</a></li>
-        <li class="header__nav-list-item"><a href="#" class="header__nav-link"></a>що робимо</li>
-        <li class="header__nav-list-item"><a href="#" class="header__nav-link"></a>медіа</li>
-        <li class="header__nav-list-item"><a href="#" class="header__nav-link"></a>база знань</li>
-      </ul>
-      <a href="#" class="header__nav-button">допомогти
-      </a>
+<header class="header-container">
+  <div class="container">
+    <div class="header">
+        <div class="header__body wrapper">
+          <a href="index.html" class="header__logo">
+            <img src="/images/header/main_logo.png" alt="">
+          </a>
+          <a href="#" class="header__burger"></a>
+          <div class="header__menu">
+            <div class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-list-item"><a href="aboutus.html" class="header__nav-link">хто ми</a></li>
+                <li class="header__nav-list-item"><a href="#" class="header__nav-link">що робимо</a></li>
+                <li class="header__nav-list-item"><a href="news.html" class="header__nav-link">медіа</a></li>
+                <li class="header__nav-list-item"><a href="#" class="header__nav-link">база знань</a></li>
+              </ul>
+              <div class="header__button animate-button-black">
+                <a href="#" class=""><div>допомогти</div></a>
+              </div>
+            </div>
+            <div class="header__language">
+              <div class="header__language-title">мова сайту</div>
+              <div class="header__language-list">
+                <a href="#" class="header__language_ukr active-lang">ukr</a>
+                <a href="#" class="header__language_eng">eng</a>
+              </div>
+            </div>
+            <div class="header__social">
+              <a href="#"><img src="/images/header/fb_white.png" alt=""></a>
+              <a href="#"><img src="/images/header/ins_white.png" alt=""></a>
+              <a href="#"><img src="/images/header/ytb_white.png" alt=""></a>
+            </div>
+          </div>
+        </div>
     </div>
-    <div class="header__lenguage"></div>
-    <div class="header__social"></div>
   </div>
 </header>
 <main>
-<section id="we_are" class="block-title">
-  <div class="block-title__description">Національний ЧСЧ-консорціум</div>
-  <div class="block-title__name">#msm_pro</div>
-  <div class="block-title__emblem">
-    <img src="/static/images/title_section/sharon-mccutcheon-epRlEd6oTmE-unsplash%201.png" alt="">
-  </div>
-</section>
-<section id="mission" class="block-about">
-  <div class="block-about__item block-about__item_image"><img src="/static/images/aboutsection/about.png" alt=""></div>
-  <div class="block-about__item block-about__item_content">
-      <div class="block-about__item block-about__item_name">про нас</div>
-      <div class="block-about__item block-about__item_title">Ініціативне об'єднання чотирьох українських організацій, заснованих на значимій участі ЛГБТІ. </div>
-      <div class="block-about__item block-about__item_text">Консорціум працює заради досягнення громадянської рівності, інклюзивного ставлення до ЛГБТІ та забезпечення епідемічного благополуччя в межах ключових груп, насамперед — ЧСЧ (чоловіків, які мають сексуальні стосунки з чоловіками), та трансґендерних людей. Організаціями-учасницями Консорціуму є громадська організація «АЛЬЯНС.ГЛОБАЛ», громадська організація «Асоціація ЛГБТ "ЛІГА"», всеукраїнська громадська організація «Гей-Форум України» та громадська організація "Спектр Харків".</div>
-      <div class="block-about__item block-about__item_button">
-        <a href="#" class="block-about__button">про нас</a>
-      </div>
-      <div class="block-about__hash">
-        <div class="block-about__hash-bg"><img src="/static/images/aboutsection/hash_bg.png" alt=""></div>
-        <div class="block-about__hash-icon"><img src="/static/images/aboutsection/hash.png" alt=""></div>
-        <div class="block-about__hash-stick">msm_pro</div>
-      </div>
-  </div>
-</section>
-<section class="partners">
-  <div class="partners__item">
-    <div class="partners__logo"><img src="/static/images/partners/gay-forum.png" alt=""></div>
-    <div class="partners__logo"><img src="/static/images/partners/alliance.png" alt=""></div>
-  </div>
-  <div class="partners__item">
-    <div class="partners__logo"><img src="/static/images/partners/ligue.png" alt=""></div>
-    <div class="partners__logo"><img src="/static/images/partners/spectre.png" alt=""></div>
-  </div>
-</section>
-<section class="whatwedo">
-  <div class="whatwedo__blocktitle">
-    <div class="whatwedo__name">про нас</div>
-    <div class="whatwedo__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-    <div class="whatwedo__description">Ініціативне об'єднання чотирьох українських організацій, заснованих на значимій участі ЛГБТІ. </div>
-    <a href="#" class="whatwedo__button">що ми робимо</a>
-  </div>
-  <div class="whatwedo__item">
-    <div class="whatwedo__number">01</div>
-    <div class="whatwedo__content">
-      <div class="whatwedo__title">
-        <div id='eqalrights' class="whatwedo__title-text">Рівні Права та Свободи</div>
-        <a href="#" class="whatwedo__title-link"><img src="/static/images/whatwedo/link-pointer.png" alt=""></a>
-      </div>
-      <div class="whatwedo__item-description">Впровадження інституту цивільного партнерства #РЦП, врегулювання відповідальності за злочини, мотивовані ненавистю #ЗМН, подолання інших дискримінаційних бар'єрів у національному законодавстві</div>
-    </div>
-  </div>
-  <div class="whatwedo__item">
-    <div class="whatwedo__number">02</div>
-    <div class="whatwedo__content">
-      <div class="whatwedo__title">
-        <div id="expert" class="whatwedo__title-text">Експертиза та Лідерство</div>
-        <a href="#" class="whatwedo__title-link"><img src="/static/images/whatwedo/link-pointer.png" alt=""></a>
-      </div>
-      <div class="whatwedo__item-description">Впровадження інституту цивільного партнерства #РЦП, врегулювання відповідальності за злочини, мотивовані ненавистю #ЗМН, подолання інших дискримінаційних бар'єрів у національному законодавстві</div>
-    </div>
-  </div>
-  <div class="whatwedo__item">
-    <div class="whatwedo__number">03</div>
-    <div class="whatwedo__content">
-      <div class="whatwedo__title">
-        <div id="helth" class="whatwedo__title-text">Громадське Здоров’я</div>
-        <a href="#" class="whatwedo__title-link"><img src="/static/images/whatwedo/link-pointer.png" alt=""></a>
-      </div>
-      <div class="whatwedo__item-description">Бюджетна адвокація і моніторинг законодавства у сфері ВІЛ
-          Покращення доступу до медико-соціальних послуг для ЧСЧ та забезпечення їх сталості</div>
-    </div>
-  </div>
-</section>
-<section class="projects">
-  <div id="knowlages" class="projects__blocktitle">спецпроєкти</div>
-  <div class="projects__project projects__project_patriot">
-    <a href="#" class="projects__title">Гей може бути патріотом</a>
-    <div class="projects__describtion ">відповідь рядового ЗСУ Олександра Горбаченка меру Івано-Франківська Руслану Марцинківу</div>
-    <a class="projects__link"><img src="/static/images/projects/pointer.png" alt=""></a>
-  </div>
-  <div class="projects__project projects__project_reg">
-    <a href="#" class="projects__title">Реєстровані цивільні партнерства</a>
-    <div class="projects__describtion">думки пар в Україні</div>
-    <a class="projects__link"><img src="/static/images/projects/pointer.png" alt=""></a>
-  </div>
-  <a class="projects__button">усі спецпроєкти</a>
-</section>
-<section class="helpus">
-  <div class="helpus__image"><img src="/static/images/helpus/edorado.png" alt=""></div>
-  <div class="helpus__content">
-    <div class="helpus__name">donation</div>
-    <div class="helpus__title">допомогти нам</div>
-    <div class="helpus__describtion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim error expedita maxime nemo numquam placeat, quod recusandae voluptates! </div>
-    <a href="#" class="helpus__button">зробити донат</a>
-    <div class="helpus__hash">
-      <div class="helpus_star"><img src="/static/images/helpus/star.png" alt=""></div>
-      <div class="helpus__hash-icon"><img src="/static/images/helpus/hash.png" alt=""></div>
-      <div class="helpus__stick">msm_pro</div>
-    </div>
-  </div>
-</section>
-<section id="media" class="news">
-  <div class="news__title">останні новини</div>
+  <svg display="none">
+    <symbol id="pointer" viewBox="0 0 30 21" >
+      <g>
+      <path d="M21.671 21C21.9409 15.7166 25.1799 12.5691 30 12.1569L30 9.23419C25.1799 8.82202 21.9409 5.71195 21.671 0.428573L18.0848 1.17799C18.2776 3.08899 18.9717 4.77518 20.1285 6.31148C21.3239 7.81031 22.6735 8.78454 24.2159 9.23419L-5.143e-07 9.23419L-3.86544e-07 12.1569L24.2159 12.1569C22.6735 12.6066 21.3239 13.5808 20.1285 15.1171C18.9717 16.6534 18.2776 18.3396 18.0848 20.2131L21.671 21Z" />
+      </g>
+    </symbol>
+  </svg>
 
-  <div class="news__block">
-    <div class="news__image"><img src="/static/images/news/news1.png" alt=""></div>
-    <div class="news__content">
-      <div class="news__description">Інформаційний апдейт по Київському шелтеру для ЛГБТ+</div>
-      <div class="news__footer">
-        <div class="news__date">may 24.2022</div>
-        <a href="#" class="news__link"><img src="/static/images/news/link-pointer.png" alt=""></a>
+<section id="we_are">
+
+  <div class="container ">
+    <div class="block-title ">
+     <div class="block-title__description">Національний ЧСЧ-консорціум</div>
+      <div class="block-title__name">#msm_pro</div>
+    </div>
+  </div>
+  <div class="block-title__emblem">
+    <img src="/images/title_section/sharon-mccutcheon-epRlEd6oTmE-unsplash%201.png" alt="">
+  </div>
+</section>
+<section id="mission" >
+  <div class="container">
+    <div class="block-about">
+      <div class="block-about__item block-about__item_image"><img src="/images/aboutsection/about.png" alt=""></div>
+      <div class="block-about__item block-about__item_content">
+          <div class="block-about__item block-about__item_name">про нас</div>
+          <div class="block-about__item block-about__item_title">Ініціативне об'єднання чотирьох українських організацій, заснованих на значимій участі ЛГБТІ. </div>
+          <div class="block-about__item block-about__item_text">Консорціум працює заради досягнення громадянської рівності, інклюзивного ставлення до ЛГБТІ та забезпечення епідемічного благополуччя в межах ключових груп, насамперед — ЧСЧ (чоловіків, які мають сексуальні стосунки з чоловіками), та трансґендерних людей. Організаціями-учасницями Консорціуму є громадська організація «АЛЬЯНС.ГЛОБАЛ», громадська організація «Асоціація ЛГБТ "ЛІГА"», всеукраїнська громадська організація «Гей-Форум України» та громадська організація "Спектр Харків".</div>
+          <div class="block-about__button animate-button-black">
+            <a href="aboutus.html" class=""><div>про нас</div></a>
+          </div>
+          <div class="block-about__hash">
+            <div class="block-about__hash-bg"><img src="/images/aboutsection/hash_bg.png" alt=""></div>
+            <div class="block-about__hash-icon"><img src="/images/aboutsection/hash.png" alt=""></div>
+            <div class="block-about__hash-stick">msm_pro</div>
+          </div>
       </div>
     </div>
   </div>
-  <div class="news__block">
-    <div class="news__image"><img src="/static/images/news/news2.png" alt=""></div>
-    <div class="news__content">
-      <div class="news__description">Вже більш ніж 40 представників_ць ЛГБТІК+ спільноти та їх рідних скористалися можливістю безкоштовного прихистку у Дніпрі!</div>
-      <div class="news__footer">
-        <div class="news__date">may 24.2022</div>
-        <a href="#" class="news__link"><img src="/static/images/news/link-pointer.png" alt=""></a>
+</section>
+<section class="partners-container">
+  <div class="container">
+    <div class="partners">
+        <div class="partners__item">
+          <div class="partners__logo"><img src="/images/partners/gay-forum.png" alt=""></div>
+          <div class="partners__logo"><img src="/images/partners/alliance.png" alt=""></div>
+        </div>
+        <div class="partners__item">
+          <div class="partners__logo"><img src="/images/partners/ligue.png" alt=""></div>
+          <div class="partners__logo"><img src="/images/partners/spectre.png" alt=""></div>
+        </div>
+    </div>
+  </div>
+</section>
+<section class="whatwedo-container">
+  <div class="container ">
+    <div class="whatwedo">
+      <div class="whatwedo__blocktitle">
+        <div class="whatwedo__name">про нас</div>
+        <div class="whatwedo__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <div class="whatwedo__description">Ініціативне об'єднання чотирьох українських організацій, заснованих на значимій участі ЛГБТІ. </div>
+        <div class="whatwedo__button animate-button-black">
+          <a href="#" class=""><div>що ми робимо</div></a>
+        </div>
+      </div>
+      <div class="whatwedo__item">
+        <div class="whatwedo__number">01</div>
+        <div class="whatwedo__content">
+          <div class="whatwedo__title">
+            <div id='eqalrights' class="whatwedo__title-text">Рівні Права та Свободи</div>
+            <a href="#" class="whatwedo__title-link">
+              <svg class="whatwedo-pointer">
+                <use xlink:href="#pointer" ></use>
+              </svg>
+            </a>
+          </div>
+          <div class="whatwedo__item-description">Впровадження інституту цивільного партнерства #РЦП, врегулювання відповідальності за злочини, мотивовані ненавистю #ЗМН, подолання інших дискримінаційних бар'єрів у національному законодавстві</div>
+        </div>
+      </div>
+      <div class="whatwedo__item">
+        <div class="whatwedo__number">02</div>
+        <div class="whatwedo__content">
+          <div class="whatwedo__title">
+            <div id="expert" class="whatwedo__title-text">Експертиза та Лідерство</div>
+            <a href="#" class="whatwedo__title-link">
+              <svg class="whatwedo-pointer">
+                <use xlink:href="#pointer" ></use>
+              </svg>
+            </a>
+          </div>
+          <div class="whatwedo__item-description">Впровадження інституту цивільного партнерства #РЦП, врегулювання відповідальності за злочини, мотивовані ненавистю #ЗМН, подолання інших дискримінаційних бар'єрів у національному законодавстві</div>
+        </div>
+      </div>
+      <div class="whatwedo__item">
+        <div class="whatwedo__number">03</div>
+        <div class="whatwedo__content">
+          <div class="whatwedo__title">
+            <div id="helth" class="whatwedo__title-text">Громадське Здоров’я</div>
+            <a href="#" class="whatwedo__title-link">
+              <svg class="whatwedo-pointer">
+                <use xlink:href="#pointer" ></use>
+              </svg>
+            </a>
+          </div>
+          <div class="whatwedo__item-description">Бюджетна адвокація і моніторинг законодавства у сфері ВІЛ
+              Покращення доступу до медико-соціальних послуг для ЧСЧ та забезпечення їх сталості</div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="news__block">
-    <div class="news__image"><img src="/static/images/news/news3.png" alt=""></div>
-    <div class="news__content">
-      <div class="news__description">Команда Національного ЧСЧ-консорціуму вітає українців з Днем Єднання!</div>
-      <div class="news__footer">
-        <div class="news__date">may 24.2022</div>
-        <a href="#" class="news__link"><img src="/static/images/news/link-pointer.png" alt=""></a>
+</section>
+<section >
+  <div class="container">
+    <div class="projects">
+      <div id="knowlages" class="projects__blocktitle">спецпроєкти</div>
+      <div class="projects__project projects__project_patriot">
+        <a href="#" class="projects__title">Гей може бути патріотом</a>
+        <div class="projects__describtion ">відповідь рядового ЗСУ Олександра Горбаченка меру Івано-Франківська Руслану Марцинківу</div>
+        <a class="projects__link">
+          <svg class="projects-pointer">
+            <use xlink:href="#pointer" ></use>
+          </svg>
+        </a>
+      </div>
+      <div class="projects__project projects__project_reg">
+        <a href="#" class="projects__title">Реєстровані цивільні партнерства</a>
+        <div class="projects__describtion">думки пар в Україні</div>
+        <a class="projects__link">
+          <svg class="projects-pointer">
+            <use xlink:href="#pointer" ></use>
+          </svg>
+        </a>
+      </div>
+      <div class="projects__button animate-button-black">
+        <a href="#" class=""><div>усі спецпроекти</div></a>
       </div>
     </div>
   </div>
-  <a href="#" class="news__button">усі новини</a>
+</section>
+<section class="helpus-container">
+  <div class="container">
+    <div class="helpus">
+      <div class="helpus__image"><img src="/images/helpus/edorado.png" alt=""></div>
+      <div class="helpus__content">
+        <div class="helpus__name">donation</div>
+        <div class="helpus__title">допомогти нам</div>
+        <div class="helpus__describtion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim error expedita maxime nemo numquam placeat, quod recusandae voluptates! </div>
+        <div class="helpus__button animate-button-black">
+          <a href="#" class=""><div>зробити донат</div></a>
+        </div>
+        <div class="helpus__hash">
+          <div class="helpus_star"><img src="/images/helpus/Star.png" alt=""></div>
+          <div class="helpus__hash-icon"><img src="/images/helpus/hash.png" alt=""></div>
+          <div class="helpus__stick">msm_pro</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="media">
+  <div class="container">
+    <div class="news">
+      <div class="news__title">останні новини</div>
+      <div class="news__block">
+        <div class="news__image"><img src="/images/news/news1.png" alt=""></div>
+        <div class="news__content">
+          <div class="news__description">Інформаційний апдейт по Київському шелтеру для ЛГБТ+</div>
+          <div class="news__footer">
+            <div class="news__date">may 24.2022</div>
+            <a href="#" class="news__link">
+              <svg class="news__pointer">
+                <use xlink:href="#pointer" ></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="news__block">
+        <div class="news__image"><img src="/images/news/news2.png" alt=""></div>
+        <div class="news__content">
+          <div class="news__description">Вже більш ніж 40 представників_ць ЛГБТІК+ спільноти та їх рідних скористалися можливістю безкоштовного прихистку у Дніпрі!</div>
+          <div class="news__footer">
+            <div class="news__date">may 24.2022</div>
+            <a href="#" class="news__link">
+              <svg class="news__pointer">
+                <use xlink:href="#pointer" ></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="news__block">
+        <div class="news__image"><img src="/images/news/news3.png" alt=""></div>
+        <div class="news__content">
+          <div class="news__description">Команда Національного ЧСЧ-консорціуму вітає українців з Днем Єднання!</div>
+          <div class="news__footer">
+            <div class="news__date">may 24.2022</div>
+            <a href="#" class="news__link">
+              <svg class="news__pointer">
+                <use xlink:href="#pointer" ></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="news__button animate-button-black">
+        <a href="#" class=""><div>усі новини</div></a>
+      </div>
+    </div>
+  </div>
 </section>
 </main>
-<footer class="footer">
-  <div class="footer__mailing">
-    <div class="footer__title">напиши <span><img src="/static/images/footer/call%20us.png" alt=""></span> нам</div>
-    <div class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae ipsum odio officia quod soluta tempore voluptatum!</div>
-    <form class="footer__form"  name="mailing" action="">
-      <input class="footer__input" placeholder="Імʼя та Фамілія" type="text">
-      <input class="footer__input" placeholder="Телефон" type="text">
-      <input class="footer__input" placeholder="Email" type="email">
-      <input class="footer__input" placeholder="Повідомлення" type="text">
-      <button class="footer__button" type="submit">надіслати</button>
-    </form>
-  </div>
-  <div class="footer__info">
-    <div class="footer__logo-container">
-      <div class="footer__logo"><img src="/static/images/footer/footer_logo.png" alt=""></div>
-    </div>
-    <nav class="footer__nav">
-      <a href="#we_are" class="footer__link footer__link_block">хто ми</a>
-      <a href="#mission" class="footer__link footer__link_block">що робимо</a>
-      <a href="#eqalrights" class="footer__link footer__link_article">рівні права та свободи</a>
-      <a href="#expert" class="footer__link footer__link_article">експертиза та лідерство</a>
-      <a href="#helth" class="footer__link footer__link_article">громадське здоровʼя</a>
-      <a href="#knowlages" class="footer__link footer__link_block">база знань</a>
-      <a href="#media" class="footer__link footer__link_block">медіа</a>
-      <a href="#media" class="footer__link footer__link_article">новини змі про нас</a>
-      <div class="footer__media-links">
-        <a href="" class="footer__media-link"><img src="/static/images/footer/fb.png" alt=""></a>
-        <a href="" class="footer__media-link"><img src="/static/images/footer/inst.png" alt=""></a>
-        <a href="" class="footer__media-link"><img src="/static/images/footer/ytb.png" alt=""></a>
+<footer class=" footer-container">
+  <div class="container">
+    <div class="footer">
+      <div class="footer__mailing">
+        <div class="footer__title">напиши <span><img src="/images/footer/call%20us.png" alt=""></span> нам</div>
+        <div class="footer__form-container">
+          <div class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae ipsum odio officia quod soluta tempore voluptatum!</div>
+          <form name="footerform" class="footer__form"  name="mailing" action="">
+            <div class="footer__input">
+              <input class="form-input" placeholder="Імʼя та Фамілія" type="text">
+              <span>Будь ласка, заповніть данне поле</span>
+            </div>
+            <div class="footer__input-container">
+                <div class="footer__input ">
+                  <input class="form-input" placeholder="Телефон" type="text">
+                  <span>Будь ласка, заповніть данне поле</span>
+                </div>
+                <div class="footer__input ">
+                  <input class="form-input" placeholder="Email" type="email">
+                  <span>Будь ласка, заповніть данне поле</span>
+                </div>
+            </div>
+            <div class="footer__input ">
+                <input class="form-input" placeholder="Повідомлення" type="text">
+                <span>Будь ласка, заповніть данне поле</span>
+            </div>
+            <button class="footer__button button" type="submit"><div>надіслати</div></button>
+          </form>
+        </div>
       </div>
-    </nav>
+      <div class="footer__info">
+        <div class="footer__logo-container">
+          <div class="footer__logo"><img src="/images/footer/footer_logo.png" alt=""></div>
+        </div>
+        <nav class="footer__nav">
+          <div class="footer__about-container">
+            <a href="#we_are" class="footer__link footer__link_block">хто ми</a>
+            <a href="#mission" class="footer__link footer__link_block">що робимо</a>
+            <a href="#eqalrights" class="footer__link footer__link_article">рівні права та свободи</a>
+            <a href="#expert" class="footer__link footer__link_article">експертиза та лідерство</a>
+            <a href="#helth" class="footer__link footer__link_article">громадське здоровʼя</a>
+          </div>
+          <div class="footer__knowledge-container">
 
+            <a href="#knowlages" class="footer__link footer__link_block">база знань</a>
+            <a href="#media" class="footer__link footer__link_block">медіа</a>
+            <a href="#media" class="footer__link footer__link_article">новини</a>
+            <a href="#media" class="footer__link footer__link_article">змі про нас</a>
+          </div>
+          <div class="footer__media-links">
+            <a href="" class="footer__media-link"><img src=" /images/footer/fb.png" alt=""></a>
+            <a href="" class="footer__media-link"><img src="/images/footer/inst.png" alt=""></a>
+            <a href="" class="footer__media-link"><img src="/images/footer/ytb.png" alt=""></a>
+          </div>
+        </nav>
+
+      </div>
+    </div>
   </div>
 </footer>
 <div class="copywrite">
   <div>© 2022 msm_Pro</div>
   <div>политика конфіденційності</div>
+</div>
+<div class="popup-donate">
+  <div class="popup-donate__image-container">
+    <div class="popup-donate__smile"><img src="/images/popup/smile.png" alt=""></div>
+    <div class="popup-donate__stick">msm_pro</div>
+    <div class="popup-donate__img"><img src="/images/helpus/edorado.png" alt=""></div>
+  </div>
+  <a href="#" class="popup-donate__close"></a>
+  <div class="popup-donate__content">
+    <div class="popup-donate__header">
+      <div class="popup-donate__title">
+        допомогти нам
+      </div>
+      <div class="popup-donate__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ea esse facere incidunt labore maxime mollitia ratione reiciendis reprehenderit vel!</div>
+    </div>
+    <div class="popup-donat__info">
+      <div class="popup-donate__item">
+        <div class="popup-donate__item-title">банк</div>
+        <div class="popup-donate__item-data">Національний банк України</div>
+      </div>
+      <div class="popup-donate__item">
+        <div class="popup-donate__item-title">мфо</div>
+        <div class="popup-donate__item-data">000000</div>
+      </div>
+      <div class="popup-donate__item">
+        <div class="popup-donate__item-title">рахунок №</div>
+        <div class="popup-donate__item-data">UA000000000000000000000</div>
+      </div>
+      <div class="popup-donate__item">
+        <div class="popup-donate__item-title">код єдрпоу</div>
+        <div class="popup-donate__item-data">00000000</div>
+      </div>
+      <div class="popup-donate__item">
+        <div class="popup-donate__item-title">отримувач</div>
+        <div class="popup-donate__item-data">Національний ЧСЧ-консорціум</div>
+      </div>
+    </div>
+  </div>
+
 </div>
 {% endblock %}

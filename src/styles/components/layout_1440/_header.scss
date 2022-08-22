@@ -1,0 +1,131 @@
+.header-container{
+  height: 77px ;
+}
+
+.header{
+  //position: fixed;
+  //top:0;
+  //left:0;
+  //z-index: 50;
+  //width: 100%;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+
+  &__body{
+
+  }
+  &__logo{
+    width: 212px;
+    height: 38px;
+  }
+  &__burger{
+    display: none;
+  }
+
+  &:before{
+    display: none;
+  }
+  &__menu{
+    overflow: visible;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:transparent;
+    padding: 0;
+    z-index:1;
+    font-family: 'e-Ukraine-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 110%;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    a{
+      text-decoration: none;
+    }
+    &_active{
+      padding: 0;
+      top: 0;
+      transition:all 0.3s ease 0s;
+    }
+  }
+  &__nav{
+    flex: 1 1 auto;
+    padding: 30px 20px;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__button{
+    width: auto;
+    padding: 13px 24px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    border-radius: 30px;
+    border-bottom: 1px solid black;
+    a {
+      color: white;
+    }
+  }
+  &__nav-list{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__nav-list-item{
+    font-family: 'e-Ukraine-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0 17px;
+  }
+  &__nav-link{
+    color: black;
+  }
+  &__language{
+    padding: 0;
+    border-bottom: none;
+  }
+  &__language-title{
+    display: none;
+  }
+  &__language-list{
+    margin: 0;
+    a {
+      display: none;
+      text-transform: uppercase;
+      color: black;
+      font-family: 'e-Ukraine-Medium';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.05em;
+
+    }
+    a.active-lang{
+      display: block;
+      font-weight: 500;
+    }
+  }
+  &__social{
+    display: none;
+  }
+
+}
+
+

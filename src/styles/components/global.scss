@@ -1,0 +1,88 @@
+*{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+  @mixin button($background, $text){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    background-color: $background;
+    position: relative;
+    a{
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      &::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 4;
+        top: 0;
+        left: 0;
+      }
+      div{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $text;
+        text-transform: uppercase;
+      }
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        visibility: hidden;
+        z-index: 1;
+        background-color: #F29100;
+        content: '';
+        width: 1%;
+        height: 0;
+        padding-bottom: 1%;
+        border-radius: 50%;
+      }
+      &:hover::before {
+        visibility: visible;
+        width: 100%;
+        padding-bottom: 100%;
+        transition: all 0.5s ease 0s;
+      }
+      &:hover {
+        div {
+          z-index: 3;
+          color: $background;
+        }
+      }
+    }
+}
+
+.animate-button-black{
+  @include button(#202124,#F5EDE3)
+}
+.animate-button-white{
+  @include button(#F5EDE3, #202124)
+}
+
+body{
+  background-color: #F5EDE3;
+}
+body.locked{
+  overflow: hidden;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+

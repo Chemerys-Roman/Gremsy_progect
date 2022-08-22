@@ -1,7 +1,12 @@
 .projects{
-  font-family: 'e-Ukraine';
+
   padding: 55px 20px 69px;
+  &-pointer{
+    height: 24px;
+    width: 35px;
+  }
   &__blocktitle{
+    font-family: 'e-Ukraine-Medium';
     margin-bottom: 30px;
     font-weight: 500;
     font-size: 28px;
@@ -10,38 +15,55 @@
   }
   &__project{
     margin-bottom: 20px;
-    height: 351px;
+    width: 100%;
+    height: 350px;
     border-radius: 15px;
-    padding: 20px 14px;
-    background-position: left;
-    background-size: cover;
-    background-repeat: no-repeat;
+    padding: 0 14px 30px;
     display: flex;
     flex-direction: column;
-    &_patriot{
+    justify-content: flex-end;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 150%;
+    &:hover {
+      .projects__title{
+        text-decoration: underline;
+      }
+      .projects-pointer {
+        use {
+          fill: #F29100;
+        }
+      }
+    }
 
-      background-image: url("../../../../static/images/projects/patriot.png");
+    &_patriot{
+      background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url("../../../../static/images/projects/patriot.png") no-repeat;
+      background-size: cover;
+      background-position: center;
     }
     &_reg{
-      background-image: url("../../../../static/images/projects/registred.png");
+      background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url("../../../../static/images/projects/registred.png") no-repeat;
+      background-size: cover;
+      background-position: center;
     }
   }
   &__link{
     display: none;
   }
   &__title{
-    flex: 1 1 auto;
-    color: white;
+    font-family: 'e-Ukraine-Medium';
+    color: #F5EDE3;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 22px;
     line-height: 26px;
-    display: flex;
-    align-items: flex-end;
   }
   &__describtion{
-    color: white;
+    font-family: 'e-Ukraine-Medium';
+    color: #F5EDE3;
+    margin-top: 10px;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -49,17 +71,18 @@
     text-transform: uppercase;
   }
   &__button{
+    font-family: 'e-Ukraine-Medium';
     padding: 10px;
-    margin-top: 10px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
+    margin: 10px 0;
     border-radius: 30px;
     width: 100%;
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
+  }
+}
+.projects-pointer {
+  use {
+    fill: #F5EDE3;
   }
 }

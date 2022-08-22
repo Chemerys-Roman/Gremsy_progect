@@ -1,0 +1,136 @@
+{% set body_class = "knowledge-base-page" %} {% extends "./_layout2.html" %} {%
+block content %}
+<main>
+  <section class="knowledge-base__search">
+    <div class="fluid-wrapper">
+      <form action="" class="knowledge-base__form-filter form-filter">
+        <label class="form-filter__search-input-label">
+          <input
+            class="form-filter__input"
+            placeholder="Напишіть що ви шукаєте"
+            type="text"
+          />
+          <a href="" class="form-filter__button button_search">
+            <svg
+              class="form-filter__search-icon"
+              viewBox="0 0 21 21"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.874 8.85a5.024 5.024 0 1 1-10.048 0 5.024 5.024 0 0 1 10.048 0Zm-.814 5.623a7.024 7.024 0 1 1 1.414-1.414l4.45 4.45a1 1 0 1 1-1.414 1.414l-4.45-4.45Z"
+              />
+            </svg>
+            <span>шукати</span>
+          </a>
+        </label>
+      </form>
+    </div>
+  </section>
+  <section class="knowledge-base__filter-base filter-base">
+    <div class="fluid-wrapper">
+      <a href="" class="filter-base__button button_filter">
+        <svg
+          class="button_filter__icon"
+          viewBox="0 0 17 17"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M6.234 3.333a1.767 1.767 0 1 0 0 3.534 1.767 1.767 0 0 0 0-3.534ZM3.4 5.6a.502.502 0 0 0 .11-.012 2.767 2.767 0 0 0 5.447 0 .502.502 0 0 0 .11.012H15.3a.5.5 0 0 0 0-1H9.067a.502.502 0 0 0-.11.012 2.767 2.767 0 0 0-5.447 0A.502.502 0 0 0 3.4 4.6H1.7a.5.5 0 1 0 0 1h1.7Zm10.09 6.788a2.767 2.767 0 0 1-5.447 0 .5.5 0 0 1-.11.012H1.7a.5.5 0 1 1 0-1h6.234a.5.5 0 0 1 .11.012 2.768 2.768 0 0 1 5.447 0 .502.502 0 0 1 .11-.012h1.7a.5.5 0 0 1 0 1h-1.7a.502.502 0 0 1-.11-.012ZM9 11.9a1.767 1.767 0 1 1 3.533 0A1.767 1.767 0 0 1 9 11.9Z"
+          />
+        </svg>
+        <span>фільтр</span>
+      </a>
+      <ul class="filter-base__filter-base-list filter-base__list">
+        <li class="filter-base__item js__active">
+          <a href="" class="filter-base__link description uppercase">
+            Усі питання
+          </a>
+        </li>
+        <li class="filter-base__item">
+          <a href="" class="filter-base__link description uppercase">
+            адвокація
+          </a>
+        </li>
+        <li class="filter-base__item">
+          <a href="" class="filter-base__link description uppercase">
+            лідерство
+          </a>
+        </li>
+        <li class="filter-base__item">
+          <a href="" class="filter-base__link description uppercase">
+            здоров’я
+          </a>
+        </li>
+        <li class="filter-base__item">
+          <a href="" class="filter-base__link description uppercase"> КМУ </a>
+        </li>
+        <li class="filter-base__item">
+          <a href="" class="filter-base__link description uppercase"> оон </a>
+        </li>
+        <li class="filter-base__item">
+          <a href="" class="filter-base__link description uppercase"> рцп </a>
+        </li>
+        <li class="filter-base__item">
+          <a href="" class="filter-base__link description uppercase">
+            msm_pro
+          </a>
+        </li>
+        <li class="filter-base__item">
+          <a href="" class="filter-base__link description uppercase">
+            громади
+          </a>
+        </li>
+        <li class="filter-base__item">
+          <a href="" class="filter-base__link description uppercase">
+            поліція
+          </a>
+        </li>
+        <li class="filter-base__item">
+          <a href="" class="filter-base__link description uppercase">
+            омбудсман
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="knowledge-base__results">
+    <div class="fluid-wrapper">
+      <ul class="knowledge-base__knowledge-base-list knowledge-base__list">
+        <li class="knowledge-base__item">
+          <div class="knowledge-base__wrapper">
+            <p class="subtitle-sm">
+              Стратегія з комплексної відповіді на бар’єри з прав людини для
+              доступу до послуг з профілактики і лікування ВІЛ та туберкульозу
+            </p>
+            <a href="" class="js__knowledge-base__button">
+              <svg
+                class="knowledge-base__icon"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.892 0h-3.787s.587 6.449.629 9.744l.002.361-.002 3.79c0 3.158-.63 10.105-.63 10.105h3.788s-.588-6.449-.63-9.744l-.002-.361.002-3.79c0-3.158.63-10.105.63-10.105Z"
+                />
+                <path
+                  d="M0 10.105v3.787s6.449-.586 9.745-.629h4.147c3.158 0 10.105.63 10.105.63v-3.788s-6.448.587-9.745.63h-4.147c-3.158 0-10.105-.63-10.105-.63Z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="knowledge-base__content js__open">
+            <p class="description">
+              Стратегія з комплексної відповіді на бар’єри з прав людини для
+              доступу до послуг з профілактики і лікування ВІЛ та туберкульозу
+            </p>
+            <a href="" class="button uppercase">завантажити pdf</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+{% endblock %}

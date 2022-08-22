@@ -1,5 +1,8 @@
+.helpus-container{
+  background-color: #EBC168;
+
+}
 .helpus{
-  font-family: 'e-Ukraine';
   width: 100%;
   &__image{
 
@@ -8,9 +11,11 @@
     background-color: #EBC168;
     padding: 30px 20px 55px;
     position: relative;
+
   }
 
   &__name{
+    font-family: 'e-Ukraine-Medium';
     font-weight: 500;
     font-size: 12px;
     line-height: 13px;
@@ -19,7 +24,7 @@
     opacity: 0.4;
   }
   &__title{
-
+    font-family: 'e-Ukraine-Medium';
     margin-top: 7px;
     font-weight: 500;
     font-size: 28px;
@@ -27,21 +32,19 @@
     text-transform: uppercase;
   }
   &__describtion{
+    font-family: 'e-Ukraine-Medium';
     margin-top: 20px;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
   }
   &__button{
-    display: block;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
+    font-family: 'e-Ukraine-Medium';
+    flex: 0 0 auto;
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
     padding: 10px 20px;
-    background-color: black;
     border-radius: 30px;
     margin-top: 20px;
   }
@@ -70,7 +73,7 @@
   }
   &__stick{
     background-color: #5383EC;
-    font-family: 'Inter';
+    font-family: 'Inter-ExtraBold';
     text-transform: uppercase;
     font-weight: 900;
     font-size: 13px;

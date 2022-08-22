@@ -1,0 +1,58 @@
+{% set body_class = "special-projects" %} {% extends "./_layout2.html" %} {%
+block content %}
+<main>
+  <section class="special-projects__project">
+    <ul class="special-projects__project-list project__list">
+      <li class="special-projects__project-item project__item">
+        <a
+          href=""
+          class="special-projects__project-link project__link"
+          style="
+            background-image: linear-gradient(
+                rgba(37, 39, 42, 0),
+                rgba(37, 39, 42, 0.5)
+              ),
+              url('../images/special-projects/special-projects__image1.jpg');
+          "
+        >
+          <div class="special-projects__wrapper project__wrapper">
+            <p class="title-m white">Гей може бути патріотом</p>
+            <p class="subtitle-m white">
+              відповідь рядового ЗСУ Олександра Горбаченка меру
+              Івано-Франківська Руслану Марцинківу
+            </p>
+          </div>
+          <img
+            src="./images/icons/icon__project-arrow.svg"
+            alt=""
+            class="special-projects__icon project__icon"
+          />
+        </a>
+      </li>
+      <li class="special-projects__project-item project__item">
+        <a
+          style="
+            background-image: linear-gradient(
+                rgba(37, 39, 42, 0),
+                rgba(37, 39, 42, 0.5)
+              ),
+              url('../images/special-projects/special-projects__image2.jpg');
+          "
+          href=""
+          class="special-projects__project-link project__link"
+        >
+          <div class="special-projects__wrapper project__wrapper">
+            <p class="title-m white">Реєстровані цивільні партнерства</p>
+            <p class="subtitle-m white">думки пар в Україні</p>
+          </div>
+          <img
+            src="./images/icons/icon__project-arrow.svg"
+            alt=""
+            class="special-projects__icon project__icon"
+          />
+        </a>
+      </li>
+    </ul>
+  </section>
+</main>
+{% endblock %}

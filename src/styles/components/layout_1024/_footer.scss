@@ -1,0 +1,116 @@
+.footer{
+  background-color: #202124;
+  color: white;
+
+
+  &__mailing{
+    padding: 55px 20px;
+    border-bottom: 2px solid #F5EDE3;
+
+  }
+  &__form-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title{
+    font-weight: 500;
+    font-size: 83px;
+    line-height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    span{
+      display: inline-block;
+      width: 250px;
+      height: 100px;
+    }
+  }
+  &__text{
+    flex: 0 0 30%;
+    margin: 40px 0 0 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &__form{
+    flex: 1 1 auto;
+    padding-left: 19px;
+  }
+  &__info{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo-container{
+    flex: 0 0 30%;
+  }
+  &__logo{
+
+  }
+  &__nav{
+    padding-left: 19px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    width: auto;
+  }
+  &__knowledge-container{
+    order: 1;
+    flex: 0 0 20%;
+    margin-right: 40px;
+  }
+  &__about-container{
+    flex: 1 1 20%;
+    order: 2;
+    margin-right: 20px;
+  }
+  &__link{
+
+    &_block{
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &_article{
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+  }
+  &__media-links{
+    order: 3;
+    flex: 0 0 20%;
+
+    align-items: start;
+
+  }
+  &__media-link{
+    background-color: #F5EDE3;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+      background-color: #F29100;
+    ;
+    }
+    img{
+      width: auto;
+      height: auto;
+    }
+  }
+}
+.copywrite{
+  height: 55px;
+  padding-top: 9px;
+  div {
+    font-family: 'e-Ukraine-Regular';
+    padding-bottom: 10px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

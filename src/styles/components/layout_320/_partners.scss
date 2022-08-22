@@ -1,5 +1,8 @@
-.partners{
+.partners-container{
   background-color: #CFDDF5;
+}
+.partners{
+
   padding: 30px 24px 55px 47px;
 
   &__item{
@@ -9,5 +12,10 @@
     justify-content: space-around;
     padding-top: 30px;
   }
-  &{}
+  &__logo{
+    filter: grayscale(100%);
+    &:hover{
+      filter: none;
+    }
+  }
 }

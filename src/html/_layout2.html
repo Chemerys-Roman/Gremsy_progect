@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MSM_PRO</title>
+    {% include './components/_page-head.html' %}
+    <link type="text/css" rel="stylesheet" href="styles/main.css" />
+  </head>
+
+  <body class="{{ body_class }}">
+    {% block content %} {% endblock %}
+
+    <script src="js/main.js"></script>
+
+    {% include './components/_scripts.html' %} {% block footer_scripts %} {%
+    endblock %}
+  </body>
+</html>

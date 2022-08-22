@@ -31,6 +31,7 @@ gulp.task('styles', () => {
 });
 
 
+
 gulp.task('html', () => {
   const datum = new Date();
   const timestamp = datum.getTime() / 1000;
@@ -135,6 +136,6 @@ gulp.task('clean', function (cb) {
 gulp.task('copy', gulp.series('copy:img', 'copy:fonts', 'copy:root'));
 gulp.task('build', gulp.series('clean', 'copy', 'html', 'styles', 'js'));
 
-const defaultTasks = gulp.parallel('html', 'styles', 'serve', 'js', 'watch')
+const defaultTasks = gulp.parallel('html', 'styles', 'serve', 'js', 'watch', 'copy:img', 'copy:fonts')
 
 export default defaultTasks
